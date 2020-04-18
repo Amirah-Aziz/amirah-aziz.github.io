@@ -1,8 +1,8 @@
 - name: portfolio
-  link: /portfolio.md
+  link: /portfolio.html
 - name: inspiration
-  link: /inspiration.md
+  link: /inspiration.html
 - name: about
-  link: /about.md
+  link: /about.html
 - name: blog
-  link: /blog.md
+  link: /blog.html

@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow" style="position: sticky; top: 0; z-index: 1000;">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary shadow" style="position: sticky; top: 0; z-index: 1000;">
 
     <div class="container">
 
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand mt-1 mx-1 text-dark font-weight-bold text-uppercase" href="/">
 
             {{ site.title }}
 
@@ -14,9 +14,9 @@
 
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 
-            <a class="navbar-brand mr-auto" href="/">
+            <a class="navbar-brand mt-1 text-muted mr-auto" href="/">
 
                 {{ site.subtitle }}
 
@@ -26,9 +26,9 @@
 
                 {% for item in site.data.navigation %}
 
-                <li class="nav-item">            
+                <li class="nav-item text-uppercase">            
                     
-                    <a class="nav-link {% if item.link == "/blog.md" %} btn btn-dark shadow-sm text-light mx-2 {% endif %}" href="{{ item.link }}">
+                    <a class="nav-link text-dark mr-2 {% if item.link == "/blog.html" %} btn btn-dark text-primary shadow px-3 {% endif %}{% if page.url == item.link %}font-weight-bold{% endif %}" href="{{ item.link }}">
                                                     
                         {{ item.name }}
                         
@@ -38,7 +38,7 @@
 
                 {% endfor %}
 
-                <li class="nav-item">
+                <li class="nav-item p-1">
 
                     {%- include social.html -%}
 
