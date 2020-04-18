@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow" style="position: sticky; top: 0; z-index: 1000;">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="/">
+
+            {{ site.title }}
+
+        </a>        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <a class="navbar-brand mr-auto" href="/">
+
+                {{ site.subtitle }}
+
+            </a>
+
+            <ul class="navbar-nav ml-auto">
+
+                {% for item in site.data.navigation %}
+
+                <li class="nav-item">            
+                    
+                    <a class="nav-link {% if item.link == "/blog.md" %} btn btn-dark shadow-sm text-light mx-2 {% endif %}" href="{{ item.link }}">
+                                                    
+                        {{ item.name }}
+                        
+                    </a>
+
+                </li>
+
+                {% endfor %}
+
+                <li class="nav-item">
+
+                    {%- include social.html -%}
+
+                </li>
+         
+            </ul>
+
+        </div>
+
+        </div>
+
+    </div>
+
+</nav>
