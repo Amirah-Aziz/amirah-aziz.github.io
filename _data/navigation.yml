@@ -1,10 +1,10 @@
 - name: home
   link: /
 - name: portfolio
-  link: /portfolio.html
+  link: /portfolio.md
 - name: inspiration
-  link: /inspiration.html
+  link: /inspiration.md
 - name: about
-  link: /about.html
+  link: /about.md
 - name: blog
-  link: /blog.html
+  link: /blog.md
