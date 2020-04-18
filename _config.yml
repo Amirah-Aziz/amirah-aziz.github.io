@@ -1,0 +1,16 @@
+title: Amirah Aziz
+subtitle: Thoughtful Influencer
+description: # one-liner elevator pitch
+email: #
+copyright: Copyright &copy; 2020 Amirah Aziz. All rights reserved.
+permalink: /:categories/:year/:month/:day/:title:output_ext
+
+twitter: #
+instagram: #
+youtube: #
+facebook: #
+
+plugins: 
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-seo-tag
